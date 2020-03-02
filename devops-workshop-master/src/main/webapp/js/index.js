@@ -7,7 +7,6 @@ inputfield.addEventListener("input",function () {
     }
 });
 
-
 /**
  * Function called when pressing login-button. Makes a HTTP POST request to server.
  * On success it calls loadApplication().
