@@ -91,7 +91,10 @@ public class CalculatorResource {
             divNumber = number1/number2;
         }
         catch (IllegalArgumentException e) {
+            e.printStackTrace();
         }
+        DecimalFormat df = new DecimalFormat("#.##");
+        double p = divNumber.parseDouble(df.format(d));
         return divNumber;
     }
         
