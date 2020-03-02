@@ -70,4 +70,29 @@ public class CalculatorResource {
 
         return number1 - number2;
     }
+    public int multiplication(String expression){
+        String[] split = expression.split("[*]");
+        
+        int number1 = Integer.parseInt(split[0]);
+        int number2 = Integer.parseInt(split[1]);
+        
+        return number1 * number2;
+    }
+    public double division(String expression){
+        String[] split = expression.split("[*]");
+        
+        int number1 = Integer.parseInt(split[0]);
+        int number2 = Integer.parseInt(split[1]);
+        
+        try{
+            if(number2==0){
+                 throw new IllegalArgumentException("Argument 'divisor' is 0");
+            }
+            divNumber = number1/number2;
+        }
+        catch (IllegalArgumentException e) {
+        }
+        return divNumber;
+    }
+        
 }
