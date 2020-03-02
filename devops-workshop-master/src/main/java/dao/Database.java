@@ -18,15 +18,15 @@ public class Database {
     private static boolean isTest = isJUnitTest();
 
 
-    private static final String IP_TO_VM = "129.241.96.191";
+    private static final String IP_TO_VM = "129.241.96.79";
 
     private static String DB_URL = "jdbc:mysql://" + ((DB_CHOICE != null) ?
             (DB_CHOICE + ":3306/") :
             (IP_TO_VM + ((isTest) ? ":3308/" : ":3307/")));
 
     private static String DB_NAME = "myChat";
-    private static String DB_USERNAME = "root";
-    private static String DB_PW = "example";
+    private static String DB_USERNAME = "rsoot";
+    private static String DB_PW = "kpodJK25";
 
     private static final String DB_USE_SSL = "?useSSL=false";
 
