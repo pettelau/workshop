@@ -15,6 +15,7 @@ public class CalculatorResource {
     /**
      * Method handling HTTP POST requests. The calculated answer to the expression will be sent to the client as
      * plain/text.
+     * wowie
      * @param expression the expression to be solved as plain/text.
      * @return solution to the expression as plain/text or -1 on error
      */
